@@ -25,3 +25,8 @@
 - Sony/PlayStation official announcement for MARVEL Tōkon: Fighting Souls.
 
 This build uses dummy/editorial seed data until the real Google Sheets feed is connected.
+
+## 4.3.5
+- Removed the cinematic page-loading overlay temporarily.
+- Internal navigation now transitions directly without the loading gimmick.
+- Other futuristic HUD/scan visuals remain available where applicable.

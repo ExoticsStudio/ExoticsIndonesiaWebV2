@@ -1039,7 +1039,7 @@ body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:90;opac
   <span>EXOTICS NETWORK</span><b>● SYSTEM ONLINE</b><span id="hudSync">CONTENT SYNCED // --:--</span><span id="hudClock">LOCAL --:--:--</span>
 </div>
 <div class="exo-live-signal" aria-live="polite"><strong>TODAY // EXOTICS</strong><span id="liveSignalText">SIGNAL CHANNEL READY</span><span id="liveSignalCount">01 / 04</span></div>
-<div class="exo-transition" id="exoTransition" aria-hidden="true"><div class="exo-transition-grid"></div><div class="exo-transition-core"><span>EXOTICS OS</span><strong id="transitionText">INITIALIZING EXOTICS...</strong><i></i></div></div>
+
 <div class="exo-scan-modal" id="exoScanModal" role="dialog" aria-modal="true" aria-labelledby="scanTitle" hidden><div class="exo-scan-box"><button class="exo-modal-x" id="scanClose" aria-label="Close">×</button><span class="eyebrow">EXOTICS SYSTEM // VISUAL SCAN</span><h2 id="scanTitle">SCAN DATABASE</h2><div class="scan-readout"><strong id="scanStatus">CALIBRATING SIGNAL...</strong><span id="scanBar"><i></i></span><small id="scanStats">VISUAL SYSTEM READY</small></div><div class="scan-stats-grid"><div><b id="scanStories">12</b><span>STORIES</span></div><div><b id="scanReviews">5</b><span>REVIEWS</span></div><div><b id="scanGuides">5</b><span>GUIDES</span></div><div><b id="scanGames">10</b><span>GAMES</span></div></div></div></div>
 <main id="main-content">
 
@@ -2251,7 +2251,7 @@ body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:90;opac
   function rotateSignal(){const el=$('#liveSignalText'),n=$('#liveSignalCount'); if(el){el.textContent=signals[si];n.textContent=String(si+1).padStart(2,'0')+' / 04';}si=(si+1)%signals.length} rotateSignal(); setInterval(rotateSignal,4200);
   // Cinematic transition for internal clean routes
   const transition=$('#exoTransition'), tt=$('#transitionText');
-  function playTransition(label){if(!transition||reduce)return Promise.resolve(); tt.textContent='LOADING '+label.toUpperCase()+' DATABASE...'; transition.classList.add('active'); transition.setAttribute('aria-hidden','false'); return new Promise(r=>setTimeout(()=>{transition.classList.remove('active');transition.setAttribute('aria-hidden','true');r()},650));}
+  function playTransition(label){return Promise.resolve();}
   document.addEventListener('click',e=>{const a=e.target.closest('a');if(!a)return;const href=a.getAttribute('href')||'';if(href.startsWith('/')&&!href.startsWith('/news/')&&href!==location.pathname&&!a.target){e.preventDefault();playTransition(href.split('/')[1]||'home').then(()=>{history.pushState({},'',href);dispatchEvent(new PopStateEvent('popstate'));});}});
   // Database scan
   const modal=$('#exoScanModal'), open=$('#scanOpen'), close=$('#scanClose');
