@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://exoticsindonesia.com/sitemap.xml

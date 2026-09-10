@@ -1,0 +1,15 @@
+{
+  "content_source": "Google Sheets",
+  "mode": "read-only",
+  "browser_writes": false,
+  "recommended_flow": "Google Sheets -> sync worker -> cached JSON -> CDN -> frontend",
+  "refresh_interval_minutes": 10,
+  "frontend_data_paths": {
+    "news": "/data/news-latest.json",
+    "reviews": "/data/reviews-latest.json",
+    "guides": "/data/guides-latest.json",
+    "article_detail": "/data/articles/{slug}.json"
+  },
+  "google_sheets_csv_url": "",
+  "notes": "Set the Google Sheets published CSV URL in the sync worker, not in the browser frontend."
+}

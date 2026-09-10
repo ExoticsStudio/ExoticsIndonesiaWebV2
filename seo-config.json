@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "site": "Exotics Indonesia",
+  "default_language": "en",
+  "supported_languages": [
+    "en",
+    "id"
+  ],
+  "url_strategy": {
+    "en": "/en/",
+    "id": "/id/",
+    "article": "/{lang}/news/{slug}"
+  },
+  "indexing": {
+    "published_only": true,
+    "noindex_drafts": true,
+    "canonical_required": true,
+    "hreflang_required": true
+  },
+  "metadata_fields": [
+    "seo_title_en",
+    "seo_title_id",
+    "seo_description_en",
+    "seo_description_id",
+    "og_image",
+    "canonical_path_en",
+    "canonical_path_id"
+  ],
+  "structured_data": [
+    "WebSite",
+    "Organization",
+    "Article",
+    "BreadcrumbList",
+    "VideoObject",
+    "Review"
+  ],
+  "technical_files": [
+    "/robots.txt",
+    "/sitemap.xml",
+    "/feed.xml"
+  ]
+}

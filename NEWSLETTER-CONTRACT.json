@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "method": "POST",
+  "content_type": "application/json",
+  "payload": {
+    "email": "string",
+    "language": "en|id",
+    "source": "exotics-website"
+  },
+  "success": "HTTP 2xx",
+  "secrets_in_frontend": false,
+  "google_sheets_writes": false
+}
