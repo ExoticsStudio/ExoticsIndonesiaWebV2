@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.3.6 — Remove Initial Scan Modal
+- Removed the `EXOTICS SYSTEM // VISUAL SCAN` modal from the initial website experience.
+- Removed the homepage `SCAN DATABASE` trigger and scan-specific frontend logic.
+- Kept cinematic/HUD visual systems without presenting a fake database scan.
+
 ## 4.3.4 — 2026-09-10
 
 ### UX / Cinematic Loading
