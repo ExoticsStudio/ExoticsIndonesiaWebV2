@@ -1,5 +1,13 @@
 # Changelog
 
+## 4.3.4 — 2026-09-10
+
+### UX / Cinematic Loading
+- Changed the loading overlay to a visual-only cinematic gimmick.
+- Removed wording that could imply a real database loading/synchronization process.
+- Updated deep-scan copy to clearly communicate that it is a visual system effect, not a live backend scan.
+- Preserved reduced-motion behavior and the existing transition system.
+
 ## 4.3.3 — 2026-09-10
 
 ### Content Refresh

@@ -42,3 +42,7 @@ Only rows with `status=published` should be exposed.
 Do not fetch the complete spreadsheet from the browser on every page load. Keep listing payloads small and fetch full article content only on the article page.
 
 The current HTML contains the cinematic UI and a Google Sheets read-only configuration placeholder. The cache files in this package are starter examples for the production sync layer.
+
+
+### Loading UX
+The cinematic loading/scan visuals are intentionally a front-end gimmick for the current static build. They do not claim to perform a live database synchronization or backend scan.
