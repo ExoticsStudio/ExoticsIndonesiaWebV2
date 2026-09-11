@@ -35,3 +35,9 @@ This build uses dummy/editorial seed data until the real Google Sheets feed is c
 - Removed the cinematic page-loading overlay temporarily.
 - Internal navigation now transitions directly without the loading gimmick.
 - Other futuristic HUD/scan visuals remain available where applicable.
+
+## v4.3.7 — Homepage Flow Fix
+- Fixed homepage document structure so Community, Newsletter, 7 Day Login, and footer content remain part of the normal page flow after “Submit your story”.
+- Removed stray closing div tags before the main content.
+- Kept all sections visible on the homepage; dedicated-page routing remains available.
+- Updated visible build version to 4.3.7.
